@@ -9,7 +9,7 @@ Main takes two parameters:
 * srcFile.csv -  a CSV input file consisting of an unsolved Sudoku with 0's representing blanks
 * dstFile.csv - output a CSV file with the solved Sudoku
 
-#### Example srcFile.csv 
+*Example srcFile.csv* 
 ```
 0,3,5,2,9,0,8,6,4
 0,8,2,4,1,0,7,0,3
@@ -21,3 +21,14 @@ Main takes two parameters:
 3,5,9,0,2,8,4,1,7
 8,0,0,9,0,0,5,2,6
 ```
+### Running
+* you need scala and sbt
+* clone repo 
+* change directory to sudoku-solver
+* run **sbt**
+
+#### Running solver
+```sbt run srcFile.csv dstFile.csv```
+
+#### Tests
+```sbt test```
